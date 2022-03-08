@@ -1,4 +1,4 @@
-{% set version = "1.1.4" %}
+{% set version = "1.1.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/semPlot_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/semPlot/semPlot_{{ version }}.tar.gz
-  sha256: 1b5fdaaf5a35f583cdc35d85da25ac5709924b4d1b0348befec83fa10c7c6edf
+  sha256: 6cd39e6f80cf9e5c5045e7f8f2e888ea1b0355e084909b1b1c1ddac4b04ffb34
 
 build:
   skip: true  # [win]
