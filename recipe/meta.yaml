@@ -1,6 +1,5 @@
 {% set version = "1.1.6" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-semplot
@@ -13,8 +12,9 @@ source:
   sha256: 11f52907168126de50dc7577f07d1383702710f76628d4c90c8f52ed2eb92b69
 
 build:
-  skip: true  # [win]
-  number: 2
+  # Checking windows to see if it passes. Uncomment the line if it fails.
+  # skip: true  # [win]
+  number: 3
 
   rpaths:
     - lib/R/lib/
