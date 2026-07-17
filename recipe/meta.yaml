@@ -1,4 +1,4 @@
-{% set version = "1.1.8" %}
+{% set version = "1.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/semPlot_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/semPlot/semPlot_{{ version }}.tar.gz
-  sha256: 6a3e0bb5c59622943c0cb533cdde600f8fe8f2b491984dd879fe2cadb66cfb79
+  sha256: b47142bc8fbace70a5ce1a358fb85a2bd99a21cee20970da8b87725a6c6126e3
 
 build:
   # Checking windows to see if it passes. Uncomment the line if it fails.
